@@ -18,7 +18,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    padding-bottom: 180px;
+    padding-bottom: 50px;
 }
 .negro {
     height: 200px;
@@ -33,7 +33,6 @@ body {
     justify-content: center;
     text-align: center;
     height: 100vh;
-    overflow: hidden;
     margin: 0;
 }
 footer {
@@ -58,7 +57,7 @@ footer {
     }
     video {
         width: 180px;
-        height: 100%;
+        height: 500px;
     }
     audio {
         width: 180px;
@@ -69,10 +68,44 @@ footer {
         align-items: center;
         gap: 20px;
     }
+    footer {
+        height: 60px;
+        width: 100%;
+    }
+    .Copright {
+        text-align: center;
+        padding: 10px;
+    }
 }
 /* Por debajo de 400px */
 @media screen and (max-width: 400px) {
     body {
         background-color: cadetblue;
+        overflow-y: scroll;
+    }
+    .saludo {
+        font-size: 10px;
+    }
+    .negro {
+        width: 180px;
+        height: 180px;
+    }
+    video {
+        width: 180px;
+        height: auto;
+    }
+    audio {
+        width: 180px;
+    }
+    .entregas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Copright {
+        text-align: center;
+        padding: 5px;
     }
 }
