@@ -19,13 +19,14 @@ header {
     flex-wrap: wrap;
     gap: 40px;
     padding-bottom: 50px;
+    padding-right: 10px;
 }
 .negro {
     height: 200px;
     width: 300px;
 }
 body {
-    background-color: rgb(161, 100, 223);
+    background-color: cadetblue;
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-wrap: wrap; /* mira si los elementos se ajustan en una linea on en varias */
@@ -43,30 +44,14 @@ footer {
     text-align: center;
     padding: 10px;
 }
-@media screen and (max-width: 700px) {
+@media (max-width: 1024px) {
     body {
-        background-color: rgb(132, 165, 42);
-        overflow: hidden;
-    }
-    saludo {
-        font-size: 10px;
-    }
-    .negro {
-        width: 180px;
-        height: 180px;
-    }
-    video {
-        width: 180px;
-        height: 500px;
-    }
-    audio {
-        width: 180px;
+        background-color: chocolate;
     }
     .entregas {
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 20px;
+        justify-content: center;
     }
     footer {
         height: 60px;
@@ -81,7 +66,6 @@ footer {
 @media screen and (max-width: 400px) {
     body {
         background-color: cadetblue;
-        overflow-y: scroll;
     }
     .saludo {
         font-size: 10px;
